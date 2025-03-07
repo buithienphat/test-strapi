@@ -1,25 +1,23 @@
 {
   "kind": "collectionType",
-  "collectionName": "brands",
+  "collectionName": "banners",
   "info": {
-    "singularName": "brand",
-    "pluralName": "brands",
-    "displayName": "Brand",
+    "singularName": "banner",
+    "pluralName": "banners",
+    "displayName": "Banner",
     "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+    "Title": {
+      "type": "string"
     },
-    "logo": {
+    "image": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",

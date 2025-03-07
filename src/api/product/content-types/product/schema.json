@@ -16,7 +16,7 @@
       "required": true
     },
     "price": {
-      "type": "integer",
+      "type": "decimal",
       "required": true
     },
     "quantity": {
@@ -33,7 +33,7 @@
       ]
     },
     "cost": {
-      "type": "integer",
+      "type": "decimal",
       "required": true
     },
     "hot": {
@@ -46,15 +46,9 @@
     },
     "categories": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::category.category",
-      "mappedBy": "products"
-    },
-    "brand": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::brand.brand",
-      "inversedBy": "products"
+      "mappedBy": "product"
     }
   }
 }

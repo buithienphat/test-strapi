@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "themes",
+  "info": {
+    "singularName": "theme",
+    "pluralName": "themes",
+    "displayName": "Theme"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "banners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::banner.banner"
+    }
+  }
+}

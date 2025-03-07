@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Chủ đề",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "banners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::banner.banner"
+    },
+    "data": {
+      "type": "json"
+    }
+  }
+}
